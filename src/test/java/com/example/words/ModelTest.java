@@ -26,9 +26,9 @@ public class ModelTest {
         List<String> res = new ArrayList<>(Arrays.asList("fish","horse","egg","goose","eagle"));
         Words words = new Words();
         Words result = new Words();
-        words.getWorlds().addAll(example);
-        result.getWorlds().addAll(res);
-        assertEquals(result.getWorlds(),model.result(words).getWorlds());
+        words.getWords().addAll(example);
+        result.getWords().addAll(res);
+        assertEquals(result.getWords(),model.result(words).getWords());
     }
 
     @Test
@@ -37,9 +37,9 @@ public class ModelTest {
         List<String> res = new ArrayList<>(Arrays.asList("fish","horse"));
         Words words = new Words();
         Words result = new Words();
-        words.getWorlds().addAll(example);
-        result.getWorlds().addAll(res);
-        assertEquals(result.getWorlds(),model.result(words).getWorlds());
+        words.getWords().addAll(example);
+        result.getWords().addAll(res);
+        assertEquals(result.getWords(),model.result(words).getWords());
     }
     @Test
     public void testResult3(){
@@ -47,17 +47,17 @@ public class ModelTest {
         List<String> res = new ArrayList<>(Arrays.asList("fish","horse"));
         Words words = new Words();
         Words result = new Words();
-        words.getWorlds().addAll(example);
-        result.getWorlds().addAll(res);
-        assertEquals(result.getWorlds(),model.result(words).getWorlds());
+        words.getWords().addAll(example);
+        result.getWords().addAll(res);
+        assertEquals(result.getWords(),model.result(words).getWords());
     }
     @Test
     public void testResult4(){
         List<String> example = new ArrayList<>(Arrays.asList("","horse","","goose","eagle"));
         Words words = new Words();
         Words result = new Words();
-        words.getWorlds().addAll(example);
-        assertEquals(result.getWorlds(),model.result(words).getWorlds());
+        words.getWords().addAll(example);
+        assertEquals(result.getWords(),model.result(words).getWords());
     }
 
 }
