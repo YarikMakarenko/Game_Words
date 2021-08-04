@@ -1,8 +1,7 @@
 package com.example.words.controller;
 
-import com.example.words.Model;
+import com.example.words.model.Model;
 import com.example.words.Words;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 
@@ -10,8 +9,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("words")
 public class WordsController {
 
-    @Autowired
-    private Model model;
+    private final Model model = new Model();
 
 
     @PostMapping
